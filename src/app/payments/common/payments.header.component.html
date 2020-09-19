@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <p class="occ-datainfo">Fields marked with <span class="required"></span> are required</p>
+         <!--<oc-checkbox [label]="chkBoxModel.label" [(ngModel)]="chkBoxModel.checked"></oc-checkbox>-->
+    </div>
+</div>
+<div>
+    <hr/>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <label required="true">
+            Debit Account
+        </label>
+        <input type="text" size="50"/>
+        <!--<oc-typeahead #accountNumberRef required="true" placeholder="" [(ngModel)]="selectedAccounts"
+            [openOnFocus]="true" [dataResult]="searchAccountsResults" (searchMethod)="searchAccounts($event)"
+            size="50" field="name" class="occ-typeahead-accounts" [ngModelOptions]="{standalone: true}"
+            [setEmptyOnBlur]="false" (onSelect)="onSelectAccount($event)">
+        </oc-typeahead>-->
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <label required="true">
+            Payment Currency
+        </label>
+        <input type="text" size="50"/>
+        <!-- <oc-typeahead #paymentCurrenyRef required="true" placeholder="" [(ngModel)]="selectedPaymentCurrency"
+            [openOnFocus]="true" [dataResult]="searchPaymentCurrenyResults" (searchMethod)="searchPaymentCurrency($event)"
+            size="50" field="name" class="occ-typeahead-accounts" [ngModelOptions]="{standalone: true}"
+            [setEmptyOnBlur]="false">
+        </oc-typeahead>		-->			
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <label>
+            Payment Amount
+        </label>
+        <input type="text" size="50"/>
+        <!-- <oc-text #paymentAmountRef required="true" placeholder="" [(ngModel)]="paymntAmount"
+            size="50" field="name" >
+        </oc-text>-->					
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <label>
+            Account Name
+        </label>
+        <label>
+            <span
+                *ngIf="selectedAccounts && selectedAccounts.length && selectedAccounts[0].acctName; else noValueBlock">{{selectedAccounts[0].acctName}}</span>
+            <ng-template #noValueBlock>--</ng-template>
+        </label>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+            <label required="true">
+                Payment Method
+            </label>
+            <input type="text" size="50"/>
+            <!-- <oc-typeahead #paymentMethodRef required="true" placeholder="" [(ngModel)]="selectedPaymentMethod"
+                [openOnFocus]="true" [dataResult]="searchPaymentMethodResults" (searchMethod)="searchPaymentMethod($event)"
+                size="50" field="name" class="occ-typeahead-accounts" [ngModelOptions]="{standalone: true}"
+                [setEmptyOnBlur]="false">
+            </oc-typeahead>	-->					
+        </div>
+</div>
+
+<div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <label>
+                Branch Name
+            </label>
+            <label>
+                <span
+                    *ngIf="selectedAccounts && selectedAccounts.length && selectedAccounts[0].branchName; else noValueBlock">{{selectedAccounts[0].branchName}}</span>
+                <ng-template #noValueBlock>--</ng-template>
+            </label>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+                <label required="true">
+                    Payment Type
+                </label>
+                <input type="text" size="50"/>
+                 <!--<oc-typeahead #paymentTypeRef required="true" placeholder="" [(ngModel)]="selectedPaymentType"
+                    [openOnFocus]="true" [dataResult]="searchPaymentTypeResults" (searchMethod)="searchPaymentType($event)"
+                    size="50" field="name" class="occ-typeahead-accounts" [ngModelOptions]="{standalone: true}"
+                    [setEmptyOnBlur]="false">
+                </oc-typeahead>		-->					
+            </div>
+    </div>
+
+<!--<div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <oc-checkbox-list legend="Mark this Payment as:" [(ngModel)]="chkListModel" [orientation]="horizontalOrientation" [ngModelOptions]="{standalone: true}"
+         class="occ-horizontal-checkbox-list">
+        </oc-checkbox-list>
+    </div>
+</div>-->

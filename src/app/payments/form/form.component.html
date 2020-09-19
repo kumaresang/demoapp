@@ -1,0 +1,1055 @@
+<div class="oc-breadcrumbs">
+	<div class="breadcrumbs">
+
+		<span class="ng-star-inserted">
+
+			<a class="ng-star-inserted">Home</a>
+
+			<span class="occ-right-arrow ng-star-inserted">&gt;</span>
+		</span><span class="ng-star-inserted">
+
+			<a class="ng-star-inserted">Payments</a>
+
+			<span class="occ-right-arrow ng-star-inserted" hidden="">&gt;</span>
+		</span>
+		<span class="occ-right-arrow ng-star-inserted">&gt;</span>
+		<span class="active ng-star-inserted" ><a class="ng-star-inserted">Initiate Payments</a><span class="occ-right-arrow ng-star-inserted" hidden="">&gt;</span></span>
+	</div>
+</div>
+<h1 class="occ-page-title">Initiate Payment</h1>
+<div class="oc-nav-wizard">
+    <div class="horizontal-nav-wizard">
+        <ul class="navflow-wizard">
+          
+            <li class="navflow-wizard-step ng-star-inserted" [ngClass]="{'inactive':currentStep!=1}">
+                <div>
+                    <span class="step-number occ-icon">  </span>
+                    
+                    <span class="step-label ng-star-inserted">Payment Details</span>
+                   
+                </div>
+            </li>
+            <li class="navflow-wizard-step inactive ng-star-inserted" [ngClass]="{'inactive':currentStep!=2}">
+                <div>
+                    <span class="step-number occ-icon">  </span>
+                   
+                    <span class="step-label ng-star-inserted">Additional Information</span>
+                  
+                </div>
+            </li>
+            <li class="navflow-wizard-step inactive ng-star-inserted" [ngClass]="{'inactive':currentStep!=3}">
+                <div>
+                    <span class="step-number occ-icon">  </span>
+                   
+                    <span class="step-label ng-star-inserted">Review and Submit</span>
+                  
+                </div>
+            </li>
+        </ul><div class="wizard-tracker active-{{currentStep}} steps-3"><span class="progress"></span></div>
+    </div>
+</div>
+
+<div class="occ-form-panel">
+    <div class="occ-form-main">
+        <div *ngIf="currentStep===1">
+            <oc-payments-header></oc-payments-header>
+		</div>
+		<div *ngIf="currentStep===2">
+            <div class="row">
+				<div class="col-xs-12 occ-datainfo">
+					Fill in any optional infromation
+				</div>
+			</div>
+			<div class="occ-multi-panel-wrapper">
+				<div class="oc-panel" paneltype="primary" required="">
+					<div class="panel panel-primary">
+				
+						<div class="panel-heading">
+							<h2 class="ng-tns-c1-1"><span class="oc-panel-header">Payment Details</span></h2>
+				
+
+							<div class="panel-expand-collapse-wrapper">
+				
+							</div>
+						</div><div class="ng-tns-c1-1 ng-trigger ng-trigger-openClose" style="display: block; opacity: 1;">
+				
+							<div class="panel-body" style="">
+								<div class="oc-panel-body">
+									<div class="row">
+										<div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Debit Account</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												AE720211000000120144049
+											</label>
+				
+										</div><div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Payment Currency</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												<span>INR - INDIAN RUPEE</span>
+											</label>
+				
+										</div><div class="col-xs-4">
+											
+												<label class="d-block" for="">
+													<span></span>
+				
+													<span class="required ng-star-inserted"></span><b>Payment Amount</b>
+												</label>
+				
+												<div class="input-container">
+				
+													<input class="form-control ng-untouched ng-pristine ng-valid" placeholder="" formname="amount" name="amount" required="true" type="text" />
+													
+												</div>
+				
+										</div>
+									</div><div class="row">
+										<div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Account Name</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												0120144XXXXXXXXXXXX
+											</label>
+				
+										</div><div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Payment Method</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												Cross Border Payments
+											</label>
+				
+										</div>
+									</div><div class="row">
+										<div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Branch Name</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												ABU DHABI CITIBANK
+											</label>
+				
+										</div><div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Payment Type</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												--
+											</label>
+				
+										</div>
+									</div><div class="row">
+										<div class="col-xs-4">
+				
+											<label class="d-block" for="">
+												<span></span>
+												<b>Debit Account Balance</b>
+											</label>
+				
+											<label class="d-block" for="">
+												<span></span>
+												112141024.29 EUR Sunday, 13 September 2020, 04:02 AM
+											</label>
+				
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="oc-panel" paneltype="secondary">
+					<div class="panel panel-secondary">
+						<div class="panel-heading ng-tns-c1-2 ng-star-inserted">
+							<h2 class="ng-tns-c1-2"><div class="oc-panel-header">Payment Details</div></h2>
+							<div class="panel-expand-collapse-wrapper">
+								<span class="panel-expand-collapse-text ng-tns-c1-2 ng-star-inserted">
+									<span class="ng-tns-c1-2 ng-star-inserted">
+									</span><span class="ng-tns-c1-2 collapse-i"></span>
+								</span>
+							</div>
+						</div><div class="ng-tns-c1-2 ng-trigger ng-trigger-openClose" style="display: block; opacity: 1;">
+							<div class="panel-body" style="">
+								<div class="oc-panel-body">
+									<div class="row">
+										<div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Transaction Reference Number
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Value Date
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Payment Details
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div>
+									</div><div class="row">
+										<div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Related Reference
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Charges Indicator
+											</label>
+											<div class="input-container">
+
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div>
+									</div><div class="row">
+										<div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Mark this Payment as Important
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Confidential
+											</label>
+											<div class="input-container">
+																
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="oc-panel" paneltype="secondary">
+					<div class="panel panel-secondary">
+						<div class="panel-heading ng-tns-c1-2 ng-star-inserted">
+							<h2 class="ng-tns-c1-2"><div class="oc-panel-header">Beneficiary Details</div></h2>
+							<div class="panel-expand-collapse-wrapper">
+								<span class="panel-expand-collapse-text ng-tns-c1-2 ng-star-inserted">
+									<span class="ng-tns-c1-2 ng-star-inserted">
+									</span><span class="ng-tns-c1-2 collapse-i"></span>
+								</span>
+							</div>
+						</div><div class="ng-tns-c1-2 ng-trigger ng-trigger-openClose" style="display: block; opacity: 1;">
+							<div class="panel-body" style="">
+								<div class="oc-panel-body">
+									<div class="row">
+										<div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Beneficiary Name
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Beneficiary ID
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Beneficiary Address
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div>
+									</div><div class="row">
+											<div class="col-xs-4">
+												<label class="d-block">
+													<span></span> Beneficiary Bank Name
+												</label>
+												<div class="input-container">
+					
+													<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+					
+												</div>
+											</div><div class="col-xs-4">
+												<label class="d-block">
+													<span></span> Beneficiary Account or Other ID Type
+												</label>
+												<div class="input-container">
+					
+													<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+					
+												</div>
+											</div><div class="col-xs-4">
+												<label class="d-block">
+													<span></span> Beneficiary Account or Other ID
+												</label>
+												<div class="input-container">
+					
+													<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+					
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="oc-panel" paneltype="secondary">
+					<div class="panel panel-secondary">
+						<div class="panel-heading ng-tns-c1-2 ng-star-inserted">
+							<h2 class="ng-tns-c1-2"><div class="oc-panel-header">Ordering Party Details</div></h2>
+							<div class="panel-expand-collapse-wrapper">
+								<span class="panel-expand-collapse-text ng-tns-c1-2 ng-star-inserted">
+									<span class="ng-tns-c1-2 ng-star-inserted">
+									</span><span class="ng-tns-c1-2 collapse-i"></span>
+								</span>
+							</div>
+						</div><div class="ng-tns-c1-2 ng-trigger ng-trigger-openClose" style="display: block; opacity: 1;">
+							<div class="panel-body" style="">
+								<div class="oc-panel-body">
+									<div class="row">
+										<div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Ordering Party Name
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div><div class="col-xs-4">
+											<label class="d-block">
+												<span></span> Ordering Party ID Type
+											</label>
+											<div class="input-container">
+				
+												<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+				
+											</div>
+										</div>
+									</div><div class="row">
+											<div class="col-xs-4">
+												<label class="d-block">
+													<span></span> Ordering Address
+												</label>
+												<div class="input-container">
+					
+													<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+					
+												</div>
+											</div><div class="col-xs-4">
+												<label class="d-block">
+													<span></span> Ordering Party ID
+												</label>
+												<div class="input-container">
+					
+													<input class="form-control" placeholder="" formname="amount" name="amount" required="true" type="text" />
+					
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<div *ngIf="currentStep===3">
+            Under Construction
+        </div>
+    </div>
+</div>
+
+<div class="oc-footer occ-form-footer disabled">
+    <div class="footer">
+        <div class="occ-left-panel">
+            <!-- <div  class="oc-action-button btn-tertiary" label="CANCEL" type="button">
+                <button class="oc-action-button btn btn-tertiary" type="button" tabindex="0">
+                    <i class="occ-icon occ-cancel"></i>CANCEL
+                </button>
+            </div>
+            <div class="oc-action-button btn-tertiary occ-btn-save" label="Save as Draft" type="button">
+                <button class="oc-action-button btn btn-tertiary occ-btn-save" type="button" tabindex="0"><i class=""></i>Save as Draft</button>
+            </div>
+            <div class="oc-action-button btn-tertiary occ-btn-save" label="Save as Template" type="button">
+                <button class="oc-action-button btn btn-tertiary occ-btn-save" type="button" tabindex="0"><i class=""></i>Save as Template</button>
+            </div> -->
+        </div>
+        <div class="occ-right-panel">
+            <div class="oc-action-button btn-tertiary occ-btn-clear" label="Clear All" type="button">
+                <button class="oc-action-button btn btn-tertiary occ-btn-clear" type="button" tabindex="0"><i class=""></i>Clear All</button>
+            </div>
+            <div class="oc-action-button btn-primary" label="Next Step" type="button">
+                <button class="oc-action-button btn btn-primary" type="button" tabindex="0" (click)="proceedToNext()"><i class=""></i>Next Step</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+
+
+<oc-nav-wizard [steps]="paymentDetails" [type]="wizardType" [currentStep]="currentStep"></oc-nav-wizard>
+
+<div class="occ-form-panel">
+	<div class="occ-form-main">
+		<div *ngIf="currentStep===1">			
+			<oc-payments-header></oc-payments-header>
+		</div>
+
+		<div *ngIf="currentStep===2">
+			<div class="row">
+				<div class="col-xs-12 occ-datainfo">
+					Fill in any optional infromation
+				</div>
+			</div>
+			<div class="occ-multi-panel-wrapper">
+			<oc-panel panelType="primary" required [expandable]="false" [locale]="panelLocale" [isOpen]="true">
+					<oc-panel-header>Payment Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									<b>Debit Account</b>
+								</oc-label>
+								<oc-label>
+										AE720211000000120144049
+								</oc-label>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									<b>Payment Currency</b>
+								</oc-label>
+								<oc-label>
+									<span>INR - INDIAN RUPEE</span>									
+								</oc-label>
+							</div>
+			
+							<div class="col-xs-4">
+								<oc-label required="true">
+									<b>Payment Amount</b>
+								</oc-label>
+								<oc-text type="text" name="amount" required="true" 
+									placeholder="" formName="amount"
+									></oc-text>
+							</div>
+			
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									<b>Account Name</b>
+								</oc-label>
+								<oc-label>
+										0120144XXXXXXXXXXXX
+								</oc-label>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									<b>Payment Method</b>
+								</oc-label>
+								<oc-label>
+									Cross Border Payments
+								</oc-label>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+									<oc-label>
+										<b>Branch Name</b>
+									</oc-label>
+									<oc-label>
+										ABU DHABI CITIBANK
+									</oc-label>
+								</div>
+								<div class="col-xs-4">
+									<oc-label>
+										<b>Payment Type</b>
+									</oc-label>
+									<oc-label>
+										--
+									</oc-label>
+								</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+									<oc-label>
+										<b>Debit Account Balance</b>
+									</oc-label>
+									<oc-label>
+										112141024.29 EUR 
+										Sunday, 13 September 2020, 04:02 AM
+									</oc-label>
+								</div>									
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Beneficiary Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference" readonly></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Intermediary Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Ordering Party Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Memo & Bank Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Invoice Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+				<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="false">
+					<oc-panel-header>Beneficiary Details</oc-panel-header>
+					<oc-panel-body>
+						<div class="row">
+							<div class="col-xs-12">
+								<oc-label>
+									Beneficiary Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryAddress" placeholder="Beneficiary Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Advice Type
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryAdviceTypes" placeholder="Select Beneficiary Advice Type"></oc-dropdown>
+							</div>
+							<div class="col-xs-6">
+								<oc-label>
+									Beneficiary Reference
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryReference"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Is
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryTypes" placeholder="Select Beneficiary Type" [(ngModel)]="selectedBeneficiaryType"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Name
+								</oc-label>
+								<oc-typeahead placeholder="Enter Beneciary Bank" [(ngModel)]="selectedBeneficiaryBank" [dataResult]="beneficiaryBankSearchResults"
+								 (searchMethod)="searchBeneficiaryBanks($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Address
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryBankAddress" placeholder="Beneficiary Bank Address"></oc-text>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Method
+								</oc-label>
+								<oc-dropdown [options]="beneficiaryRoutingMethods" placeholder="Select Beneficiary Routing Method" [(ngModel)]="selectedRoutingMethod"></oc-dropdown>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Routing Code
+								</oc-label>
+								<oc-typeahead placeholder="Enter Routing Code" [(ngModel)]="selectedBeneficiaryBankRoutingCode" [dataResult]="beneficiaryBankRoutingCodeSearchResults"
+								 (searchMethod)="searchBeneficiaryBankRoutingCodes($event)" [openOnFocus]="true"></oc-typeahead>
+							</div>
+							<div class="col-xs-4">
+								<oc-label>
+									Beneficiary Bank Account or Other ID
+								</oc-label>
+								<oc-text type="text" [(ngModel)]="beneficiaryOtherId" placeholder="Enter Beneficiary Bank Account"></oc-text>
+							</div>
+						</div>
+					</oc-panel-body>
+				</oc-panel>
+			</div>
+
+		</div>
+
+		<div *ngIf="currentStep===3">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="occ-datainfo">REVIEW & SUBMIT</p>
+					<h3>Payment Details</h3>
+
+					<div class="occ-details-wrapper">
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Debit Account
+							</div>
+							<div class="occ-details-column">
+								Canyonlands Utah (...xxxxx)
+							</div>
+						</div>
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Payment Amount
+							</div>
+							<div class="occ-details-column">
+								USD 123,000.00
+							</div>
+						</div>
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Value Date
+							</div>
+							<div class="occ-details-column">
+								Wed, January 10 2018
+							</div>
+						</div>
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Payment Method
+							</div>
+							<div class="occ-details-column">
+								Funds Transfer
+							</div>
+						</div>
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Payment Type
+							</div>
+							<div class="occ-details-column">
+								Funds Transfer
+							</div>
+						</div>
+						<div class="occ-details-row">
+							<div class="occ-details-column">
+								Transaction Reference No.
+							</div>
+							<div class="occ-details-column">
+								PQR7812389
+							</div>
+						</div>
+					</div>
+					<p class="occ-datainfo2">Marked as Important</p>
+					<div class="occ-action-panel">
+						<oc-action-button class="btn-tertiary" label="Edit Details" type="button" iconClass='occ-icon occ-edit'></oc-action-button>
+						<oc-action-button class="btn-tertiary" label="Set up alerts for this payment" type="button" iconClass="occ-icon occ-alert"></oc-action-button>
+						<oc-action-button class="btn-tertiary" label="Print payment details" type="button" iconClass="occ-icon occ-print"></oc-action-button>
+					</div>
+				</div>
+			</div>
+			<oc-panel panelType="secondary" [expandable]="true" [locale]="panelLocale" [isOpen]="true">
+				<oc-panel-header>PAYMENT FLOW</oc-panel-header>
+				<oc-panel-body>
+					<oc-nav-wizard [steps]="reviewInfoWizard" [type]="OcWizardTypeEnums" [orientation]="reviewInfoWizardOrientation" class="occ-payment-flow-wizard">
+						<ng-template let-step>
+							<span class="occ-status-indicator-wrapper {{step.data.wrapperClass}}">
+												<span class="occ-status-indicator-label">{{step.data.label}}</span>
+							<span class="occ-status-indicator-status {{step.data.statusClass}}">{{step.data.status}}</span>
+							</span>
+						</ng-template>
+					</oc-nav-wizard>
+				</oc-panel-body>
+			</oc-panel>
+		</div>
+
+	</div>
+</div>
+
+<oc-footer class="occ-form-footer disabled" [fixed]="fixedFormFooter" [ngClass]="{'occ-fixed-content-form-footer' : fixedFormFooter}">
+	<div class="occ-left-panel">
+		<oc-action-button class="btn-tertiary" label="CANCEL" type="button" [iconClass]="iconClass" (click)="showCancelPaymentModal()"></oc-action-button>
+		<oc-action-button class="btn-tertiary occ-btn-save" label="Save as Draft" type="button"></oc-action-button>
+		<oc-action-button class="btn-tertiary occ-btn-save" label="Save as Template" type="button"></oc-action-button>
+	</div>
+	<div class="occ-right-panel">
+		<oc-action-button class="btn-tertiary occ-btn-clear" label="Clear All" type="button"></oc-action-button>
+		<oc-action-button class="btn-primary" label="Next Step" type="button" (click)="proceedToNext()"></oc-action-button>
+	</div>
+</oc-footer>-->
