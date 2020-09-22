@@ -19,39 +19,6 @@ body {
     opacity: 1
 }
 
-.modal-backdrop.show {
-    opacity: .5
-}
-
-.modal.show .modal-dialog {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0)
-}
-
-.modal-content {
-    width: 100%;
-    border: none
-}
-
-.modal-dialog-centered {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    height: calc(100% - (.5rem * 2));
-    min-height: 100%
-}
-
-    .modal-dialog-centered::before {
-        display: block;
-        height: calc(100vh - 1rem);
-        content: ""
-    }
-
-.modal-dialog-centered {
-    min-height: calc(100% - (1.75rem * 2))
-}
-
 .dropdown-item {
     display: block;
     width: 100%;
@@ -193,18 +160,6 @@ body {
     .occ-close-icon:after {
         content: "\f129"
     }
-
-.occ-icon.occ-home-light-grey, .occ-icon.occ-accounts-light-grey, .occ-icon.occ-payments-light-grey, .occ-icon.occ-trade-light-grey, .occ-icon.occ-admin-light-grey, .occ-icon.occ-more-products-light-grey, .occ-icon.occ-help-light-grey, .occ-icon.occ-liquidities-light-grey, .occ-icon.occ-safe-light-grey, .occ-icon.occ-reports-light-grey, .occ-icon.occ-receiveables-light-grey, .occ-icon.occ-citi-service-light-grey, .occ-icon.occ-file-services-light-grey {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    font-family: "Ionicons"
-}
-
-    .occ-icon.occ-home-light-grey:after {
-        content: "\f144"
-    }
-
     .occ-icon.occ-payments-light-grey:after, .occ-icon.occ-accounts-light-grey:after, .occ-icon.occ-trade-light-grey:after {
         content: "\f316"
     }
@@ -233,7 +188,7 @@ body {
         content: "\f391"
     }
 
-    .occ-icon.occ-receiveables-light-grey:after, .occ-icon.occ-citi-service-light-grey:after {
+    .occ-icon.occ-receiveables-light-grey:after, .occ-icon.occ-corp-service-light-grey:after {
         content: "\f3ca"
     }
 
@@ -1698,7 +1653,7 @@ oc-widget .widget {
         padding: 16px
     }
 
-        .oc-nav-bar .nav-bar .header .occ-citi-logo {
+        .oc-nav-bar .nav-bar .header .occ-corp-logo {
             max-height: 28px;
             max-width: 100%
         }
@@ -4653,7 +4608,7 @@ body.solstice, .solstice {
     }
 
         body.solstice.occ-login .occ-logo-section span, .solstice.occ-login .occ-logo-section span {
-            background: url("/assets/images/citi-login.png");
+            background: url("/assets/images/corp-login.png");
             width: 100%;
             max-width: 184px;
             height: 100%;
@@ -7423,15 +7378,15 @@ body.solstice oc-widget .widget, .solstice oc-widget .widget {
                     background-color: rgba(203,95,21,0.11)
                 }
 
-        body.solstice oc-widget .widget.category-bar.citi-blue, .solstice oc-widget .widget.category-bar.citi-blue {
+        body.solstice oc-widget .widget.category-bar.corp-blue, .solstice oc-widget .widget.category-bar.corp-blue {
             border-left-color: #002d72
         }
 
-            body.solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th, body.solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th, .solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th, .solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th {
+            body.solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th, body.solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th, .solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th, .solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th {
                 background-color: rgba(0,45,114,0.11)
             }
 
-                body.solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th:first-child:before, body.solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th:last-child:after, body.solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th:first-child:before, body.solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th:last-child:after, .solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th:first-child:before, .solstice oc-widget .widget.category-bar.citi-blue oc-table .ui-table-wrapper .ui-table-thead th:last-child:after, .solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th:first-child:before, .solstice oc-widget .widget.category-bar.citi-blue .styled-table .ui-table-wrapper .ui-table-thead th:last-child:after {
+                body.solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th:first-child:before, body.solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th:last-child:after, body.solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th:first-child:before, body.solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th:last-child:after, .solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th:first-child:before, .solstice oc-widget .widget.category-bar.corp-blue oc-table .ui-table-wrapper .ui-table-thead th:last-child:after, .solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th:first-child:before, .solstice oc-widget .widget.category-bar.corp-blue .styled-table .ui-table-wrapper .ui-table-thead th:last-child:after {
                     background-color: rgba(0,45,114,0.11)
                 }
 
@@ -8675,155 +8630,3 @@ body.solstice oc-typeahead .ui-autocomplete-panel, .solstice oc-typeahead .ui-au
 body.solstice oc-doughnut-chart .oc-doughnut-chart .c3-legend-item, .solstice oc-doughnut-chart .oc-doughnut-chart .c3-legend-item {
     cursor: default !important
 }
-
-body.solstice oc-bar-chart .legend-holder, .solstice oc-bar-chart .legend-holder {
-    font-size: 12px;
-    float: right
-}
-
-    body.solstice oc-bar-chart .legend-holder .legend, .solstice oc-bar-chart .legend-holder .legend {
-        padding-left: 1em
-    }
-
-        body.solstice oc-bar-chart .legend-holder .legend .title, .solstice oc-bar-chart .legend-holder .legend .title {
-            vertical-align: text-bottom;
-            color: #53565a
-        }
-
-        body.solstice oc-bar-chart .legend-holder .legend .box, .solstice oc-bar-chart .legend-holder .legend .box {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            opacity: 0.2;
-            margin-left: 0.2em
-        }
-
-body.solstice oc-bar-chart div.oc-bar-chart, .solstice oc-bar-chart div.oc-bar-chart {
-    margin-bottom: 2em
-}
-
-    body.solstice oc-bar-chart div.oc-bar-chart line.c3-xgrid, body.solstice oc-bar-chart div.oc-bar-chart line.c3-ygrid, body.solstice oc-bar-chart div.oc-bar-chart .c3-xgrid-lines line, body.solstice oc-bar-chart div.oc-bar-chart .c3-ygrid-lines line, .solstice oc-bar-chart div.oc-bar-chart line.c3-xgrid, .solstice oc-bar-chart div.oc-bar-chart line.c3-ygrid, .solstice oc-bar-chart div.oc-bar-chart .c3-xgrid-lines line, .solstice oc-bar-chart div.oc-bar-chart .c3-ygrid-lines line {
-        stroke-dasharray: none;
-        stroke: #e9eef3
-    }
-
-    body.solstice oc-bar-chart div.oc-bar-chart g.c3-axis.c3-axis-x, .solstice oc-bar-chart div.oc-bar-chart g.c3-axis.c3-axis-x {
-        fill: #97999b;
-        opacity: 0.7;
-        font-size: 10px
-    }
-
-    body.solstice oc-bar-chart div.oc-bar-chart g.c3-axis.c3-axis-y, .solstice oc-bar-chart div.oc-bar-chart g.c3-axis.c3-axis-y {
-        fill: #53565a;
-        font-size: 10px
-    }
-
-    body.solstice oc-bar-chart div.oc-bar-chart .tooltip-inner, .solstice oc-bar-chart div.oc-bar-chart .tooltip-inner {
-        padding: 8px 16px;
-        background-color: #0b1941;
-        max-width: 300px
-    }
-
-        body.solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-title, .solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-title {
-            text-transform: uppercase;
-            font-size: 0.75em;
-            font-weight: 300;
-            letter-spacing: 0.3em
-        }
-
-        body.solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-data, .solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-data {
-            font-weight: bolder
-        }
-
-        body.solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-extra, .solstice oc-bar-chart div.oc-bar-chart .tooltip-inner .tooltip-extra {
-            font-weight: 300;
-            font-size: 0.75em
-        }
-
-body.solstice svg path.c3-shape.c3-bar, body.solstice svg path.c3-shape.c3-arc, .solstice svg path.c3-shape.c3-bar, .solstice svg path.c3-shape.c3-arc {
-    fill-opacity: 0.2
-}
-
-    body.solstice svg path.c3-shape.c3-bar._expanded_, body.solstice svg path.c3-shape.c3-arc.c3-focused, .solstice svg path.c3-shape.c3-bar._expanded_, .solstice svg path.c3-shape.c3-arc.c3-focused {
-        stroke-width: 2px
-    }
-
-body.solstice svg line.c3-legend-item-tile, .solstice svg line.c3-legend-item-tile {
-    opacity: 0.2
-}
-
-body.solstice .c3-tooltip-container .name span, .solstice .c3-tooltip-container .name span {
-    opacity: 0.2
-}
-
-body.solstice oc-chart .legend-holder, .solstice oc-chart .legend-holder {
-    font-size: 12px;
-    float: right
-}
-
-    body.solstice oc-chart .legend-holder .legend, .solstice oc-chart .legend-holder .legend {
-        padding-left: 1em
-    }
-
-        body.solstice oc-chart .legend-holder .legend .title, .solstice oc-chart .legend-holder .legend .title {
-            vertical-align: text-bottom;
-            color: #53565a
-        }
-
-        body.solstice oc-chart .legend-holder .legend .box, .solstice oc-chart .legend-holder .legend .box {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            opacity: 0.2;
-            margin-left: 0.2em
-        }
-
-body.solstice oc-chart.bar div.occ-svg-wrapper, .solstice oc-chart.bar div.occ-svg-wrapper {
-    margin-bottom: 2em
-}
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper line.c3-xgrid, body.solstice oc-chart.bar div.occ-svg-wrapper line.c3-ygrid, body.solstice oc-chart.bar div.occ-svg-wrapper .c3-xgrid-lines line, body.solstice oc-chart.bar div.occ-svg-wrapper .c3-ygrid-lines line, .solstice oc-chart.bar div.occ-svg-wrapper line.c3-xgrid, .solstice oc-chart.bar div.occ-svg-wrapper line.c3-ygrid, .solstice oc-chart.bar div.occ-svg-wrapper .c3-xgrid-lines line, .solstice oc-chart.bar div.occ-svg-wrapper .c3-ygrid-lines line {
-        stroke-dasharray: none;
-        stroke: #e9eef3
-    }
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper .c3-axis path.domain, .solstice oc-chart.bar div.occ-svg-wrapper .c3-axis path.domain {
-        display: none
-    }
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper .c3-axis g.tick line, .solstice oc-chart.bar div.occ-svg-wrapper .c3-axis g.tick line {
-        display: none
-    }
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper g.c3-axis.c3-axis-x, .solstice oc-chart.bar div.occ-svg-wrapper g.c3-axis.c3-axis-x {
-        fill: #97999b;
-        opacity: 0.7;
-        font-size: 10px
-    }
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper g.c3-axis.c3-axis-y, .solstice oc-chart.bar div.occ-svg-wrapper g.c3-axis.c3-axis-y {
-        fill: #53565a;
-        font-size: 10px
-    }
-
-    body.solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner, .solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner {
-        padding: 8px 16px;
-        background-color: #0b1941;
-        max-width: 300px
-    }
-
-        body.solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-title, .solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-title {
-            text-transform: uppercase;
-            font-size: 0.75em;
-            font-weight: 300;
-            letter-spacing: 0.3em
-        }
-
-        body.solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-data, .solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-data {
-            font-weight: bolder
-        }
-
-        body.solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-extra, .solstice oc-chart.bar div.occ-svg-wrapper .tooltip-inner .tooltip-extra {
-            font-weight: 300;
-            font-size: 0.75em
-        }
